@@ -29,6 +29,8 @@
 		94153C0916F0E83900AE562D /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C0816F0E83900AE562D /* Tag.m */; };
 		94153C1016F0EA9800AE562D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94153C0F16F0EA9800AE562D /* CoreData.framework */; };
 		94153C1316F0EAD200AE562D /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C1216F0EAD200AE562D /* CoreDataTableViewController.m */; };
+		94153C1616F0EC0700AE562D /* Photo+Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C1516F0EC0700AE562D /* Photo+Flickr.m */; };
+		94153C1916F0F07B00AE562D /* Tag+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C1816F0F07B00AE562D /* Tag+Create.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,10 @@
 		94153C0F16F0EA9800AE562D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		94153C1116F0EAD200AE562D /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
 		94153C1216F0EAD200AE562D /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		94153C1416F0EC0700AE562D /* Photo+Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Photo+Flickr.h"; path = "Model/Photo+Flickr.h"; sourceTree = "<group>"; };
+		94153C1516F0EC0700AE562D /* Photo+Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Photo+Flickr.m"; path = "Model/Photo+Flickr.m"; sourceTree = "<group>"; };
+		94153C1716F0F07B00AE562D /* Tag+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Tag+Create.h"; path = "Model/Tag+Create.h"; sourceTree = "<group>"; };
+		94153C1816F0F07B00AE562D /* Tag+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Tag+Create.m"; path = "Model/Tag+Create.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +154,12 @@
 			children = (
 				94153C0716F0E83900AE562D /* Tag.h */,
 				94153C0816F0E83900AE562D /* Tag.m */,
+				94153C1716F0F07B00AE562D /* Tag+Create.h */,
+				94153C1816F0F07B00AE562D /* Tag+Create.m */,
 				94153C0416F0E83900AE562D /* Photo.h */,
 				94153C0516F0E83900AE562D /* Photo.m */,
+				94153C1416F0EC0700AE562D /* Photo+Flickr.h */,
+				94153C1516F0EC0700AE562D /* Photo+Flickr.m */,
 				94153BE316F0E50500AE562D /* Core Data SPoT.xcdatamodeld */,
 			);
 			name = "Core Date (Model)";
@@ -262,6 +272,8 @@
 				94153C0616F0E83900AE562D /* Photo.m in Sources */,
 				94153C0916F0E83900AE562D /* Tag.m in Sources */,
 				94153C1316F0EAD200AE562D /* CoreDataTableViewController.m in Sources */,
+				94153C1616F0EC0700AE562D /* Photo+Flickr.m in Sources */,
+				94153C1916F0F07B00AE562D /* Tag+Create.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
