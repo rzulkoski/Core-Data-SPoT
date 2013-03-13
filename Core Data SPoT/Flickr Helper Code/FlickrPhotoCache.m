@@ -13,6 +13,7 @@
 #define PHOTO_CACHE_DIR @"Photos"
 #define NUM_BYTES_PER_MB pow(2.0,20)
 #define MAX_CACHE_SIZE_IN_MB 3.0
+#define IMAGE_URL_KEY @"imageURL"
 
 @implementation FlickrPhotoCache
 
@@ -22,11 +23,9 @@
     UIImage *image = [[UIImage alloc] initWithData:[self retrieveImageDataForPhoto:photo]];
     NSLog(@"Existing Image%@Found!", image ? @" " : @" NOT ");
         
-    if (!image) { // If image was not successfully retrieved from cache, download image data from flickr.
-        NSURL *imageURL = [FlickrFetcher urlForPhoto:photo format:FlickrPhotoFormatLarge];
-        
+    if (!image) { // If image was not successfully retrieved from cache, download image data from flickr.        
         [RZTools enableNetworkActivityIndicator];
-        NSData *imageData = [[NSData alloc] initWithContentsOfURL:imageURL];
+        NSData *imageData = [[NSData alloc] initWithContentsOfURL:photo[IMAGE_URL_KEY]];
         [RZTools disableNetworkActivityIndicator];
         
         [self storeImageData:imageData forPhoto:photo];
@@ -95,8 +94,8 @@
 + (NSURL *)imageFileURLForPhoto:(NSDictionary *)photo
            withBaseDirectoryURL:(NSURL *)baseDirURL
 {
-    NSString *photoID = [photo objectForKey:@"id"];
-    NSString *photoFormatExt = [photo objectForKey:@"originalformat"];
+    NSString *photoID = [photo objectForKey:FLICKR_PHOTO_ID];
+    NSString *photoFormatExt = [photo objectForKey:FLICKR_PHOTO_ORIGINAL_FORMAT];
     
     return [[baseDirURL URLByAppendingPathComponent:photoID] URLByAppendingPathExtension:photoFormatExt];
 }

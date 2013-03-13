@@ -55,10 +55,12 @@
 {
     NSMutableSet *tags = [[NSMutableSet alloc] init];
     
-    // Look at each photo
+    // Look at each Flickr tag for the photo
+    
     for (NSString *flickrTag in [[photoDictionary[FLICKR_TAGS] description] componentsSeparatedByString:@" "]) {
         // If tag isn't one we are ignoring, add it to our set of tags for this photo
-        if (![IGNORED_TAGS containsObject:flickrTag]) {
+        if ([flickrTag length] && ![IGNORED_TAGS containsObject:flickrTag]) {
+            NSLog(@"Flickr tag = %@", flickrTag);
             Tag *tag = [Tag tagWithName:flickrTag inManagedObjectContext:context];
             [tags addObject:tag];
         }
