@@ -16,8 +16,14 @@
 		94153BBA16F0DF3100AE562D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 94153BB916F0DF3100AE562D /* Default.png */; };
 		94153BBC16F0DF3100AE562D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94153BBB16F0DF3100AE562D /* Default@2x.png */; };
 		94153BBE16F0DF3100AE562D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94153BBD16F0DF3100AE562D /* Default-568h@2x.png */; };
-		94153BC116F0DF3100AE562D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94153BBF16F0DF3100AE562D /* MainStoryboard.storyboard */; };
-		94153BC416F0DF3100AE562D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BC316F0DF3100AE562D /* ViewController.m */; };
+		94153BC116F0DF3100AE562D /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94153BBF16F0DF3100AE562D /* iPhone.storyboard */; };
+		94153BCD16F0DF9D00AE562D /* Core Data SPoT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94153BCB16F0DF9D00AE562D /* Core Data SPoT.xcdatamodeld */; };
+		94153BDD16F0E10200AE562D /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BD216F0E10200AE562D /* FlickrFetcher.m */; };
+		94153BDE16F0E10200AE562D /* FlickrImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BD416F0E10200AE562D /* FlickrImageViewController.m */; };
+		94153BDF16F0E10200AE562D /* FlickrPhotoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BD616F0E10200AE562D /* FlickrPhotoCache.m */; };
+		94153BE016F0E10200AE562D /* FlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BD816F0E10200AE562D /* FlickrPhotoTVC.m */; };
+		94153BE116F0E10200AE562D /* FlickrRecentImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BDA16F0E10200AE562D /* FlickrRecentImages.m */; };
+		94153BE216F0E10200AE562D /* RZTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BDC16F0E10200AE562D /* RZTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +40,21 @@
 		94153BB916F0DF3100AE562D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		94153BBB16F0DF3100AE562D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		94153BBD16F0DF3100AE562D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		94153BC016F0DF3100AE562D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		94153BC216F0DF3100AE562D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		94153BC316F0DF3100AE562D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		94153BC016F0DF3100AE562D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
+		94153BCC16F0DF9D00AE562D /* Core Data SPoT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Core Data SPoT.xcdatamodel"; sourceTree = "<group>"; };
+		94153BD016F0E10200AE562D /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		94153BD116F0E10200AE562D /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		94153BD216F0E10200AE562D /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		94153BD316F0E10200AE562D /* FlickrImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrImageViewController.h; sourceTree = "<group>"; };
+		94153BD416F0E10200AE562D /* FlickrImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrImageViewController.m; sourceTree = "<group>"; };
+		94153BD516F0E10200AE562D /* FlickrPhotoCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoCache.h; sourceTree = "<group>"; };
+		94153BD616F0E10200AE562D /* FlickrPhotoCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoCache.m; sourceTree = "<group>"; };
+		94153BD716F0E10200AE562D /* FlickrPhotoTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoTVC.h; sourceTree = "<group>"; };
+		94153BD816F0E10200AE562D /* FlickrPhotoTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoTVC.m; sourceTree = "<group>"; };
+		94153BD916F0E10200AE562D /* FlickrRecentImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrRecentImages.h; sourceTree = "<group>"; };
+		94153BDA16F0E10200AE562D /* FlickrRecentImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrRecentImages.m; sourceTree = "<group>"; };
+		94153BDB16F0E10200AE562D /* RZTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTools.h; sourceTree = "<group>"; };
+		94153BDC16F0E10200AE562D /* RZTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +101,9 @@
 		94153BAD16F0DF3100AE562D /* Core Data SPoT */ = {
 			isa = PBXGroup;
 			children = (
-				94153BB616F0DF3100AE562D /* AppDelegate.h */,
-				94153BB716F0DF3100AE562D /* AppDelegate.m */,
-				94153BBF16F0DF3100AE562D /* MainStoryboard.storyboard */,
-				94153BC216F0DF3100AE562D /* ViewController.h */,
-				94153BC316F0DF3100AE562D /* ViewController.m */,
+				94153BCE16F0E10200AE562D /* Flickr Helper Code */,
+				94153BCA16F0DF8B00AE562D /* Model */,
+				94153BBF16F0DF3100AE562D /* iPhone.storyboard */,
 				94153BAE16F0DF3100AE562D /* Supporting Files */,
 			);
 			path = "Core Data SPoT";
@@ -96,6 +112,8 @@
 		94153BAE16F0DF3100AE562D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				94153BB616F0DF3100AE562D /* AppDelegate.h */,
+				94153BB716F0DF3100AE562D /* AppDelegate.m */,
 				94153BAF16F0DF3100AE562D /* Core Data SPoT-Info.plist */,
 				94153BB016F0DF3100AE562D /* InfoPlist.strings */,
 				94153BB316F0DF3100AE562D /* main.m */,
@@ -105,6 +123,42 @@
 				94153BBD16F0DF3100AE562D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94153BCA16F0DF8B00AE562D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94153BCB16F0DF9D00AE562D /* Core Data SPoT.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		94153BCE16F0E10200AE562D /* Flickr Helper Code */ = {
+			isa = PBXGroup;
+			children = (
+				94153BCF16F0E10200AE562D /* FlickrFetcher */,
+				94153BD316F0E10200AE562D /* FlickrImageViewController.h */,
+				94153BD416F0E10200AE562D /* FlickrImageViewController.m */,
+				94153BD516F0E10200AE562D /* FlickrPhotoCache.h */,
+				94153BD616F0E10200AE562D /* FlickrPhotoCache.m */,
+				94153BD716F0E10200AE562D /* FlickrPhotoTVC.h */,
+				94153BD816F0E10200AE562D /* FlickrPhotoTVC.m */,
+				94153BD916F0E10200AE562D /* FlickrRecentImages.h */,
+				94153BDA16F0E10200AE562D /* FlickrRecentImages.m */,
+				94153BDB16F0E10200AE562D /* RZTools.h */,
+				94153BDC16F0E10200AE562D /* RZTools.m */,
+			);
+			path = "Flickr Helper Code";
+			sourceTree = "<group>";
+		};
+		94153BCF16F0E10200AE562D /* FlickrFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				94153BD016F0E10200AE562D /* FlickrAPIKey.h */,
+				94153BD116F0E10200AE562D /* FlickrFetcher.h */,
+				94153BD216F0E10200AE562D /* FlickrFetcher.m */,
+			);
+			path = FlickrFetcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +216,7 @@
 				94153BBA16F0DF3100AE562D /* Default.png in Resources */,
 				94153BBC16F0DF3100AE562D /* Default@2x.png in Resources */,
 				94153BBE16F0DF3100AE562D /* Default-568h@2x.png in Resources */,
-				94153BC116F0DF3100AE562D /* MainStoryboard.storyboard in Resources */,
+				94153BC116F0DF3100AE562D /* iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +229,13 @@
 			files = (
 				94153BB416F0DF3100AE562D /* main.m in Sources */,
 				94153BB816F0DF3100AE562D /* AppDelegate.m in Sources */,
-				94153BC416F0DF3100AE562D /* ViewController.m in Sources */,
+				94153BCD16F0DF9D00AE562D /* Core Data SPoT.xcdatamodeld in Sources */,
+				94153BDD16F0E10200AE562D /* FlickrFetcher.m in Sources */,
+				94153BDE16F0E10200AE562D /* FlickrImageViewController.m in Sources */,
+				94153BDF16F0E10200AE562D /* FlickrPhotoCache.m in Sources */,
+				94153BE016F0E10200AE562D /* FlickrPhotoTVC.m in Sources */,
+				94153BE116F0E10200AE562D /* FlickrRecentImages.m in Sources */,
+				94153BE216F0E10200AE562D /* RZTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,12 +250,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		94153BBF16F0DF3100AE562D /* MainStoryboard.storyboard */ = {
+		94153BBF16F0DF3100AE562D /* iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				94153BC016F0DF3100AE562D /* en */,
 			);
-			name = MainStoryboard.storyboard;
+			name = iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +360,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		94153BCB16F0DF9D00AE562D /* Core Data SPoT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				94153BCC16F0DF9D00AE562D /* Core Data SPoT.xcdatamodel */,
+			);
+			currentVersion = 94153BCC16F0DF9D00AE562D /* Core Data SPoT.xcdatamodel */;
+			path = "Core Data SPoT.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 94153B9C16F0DF3000AE562D /* Project object */;
 }
