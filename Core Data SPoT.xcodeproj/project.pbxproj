@@ -11,19 +11,24 @@
 		94153BAA16F0DF3100AE562D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94153BA916F0DF3100AE562D /* Foundation.framework */; };
 		94153BAC16F0DF3100AE562D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94153BAB16F0DF3100AE562D /* CoreGraphics.framework */; };
 		94153BB216F0DF3100AE562D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94153BB016F0DF3100AE562D /* InfoPlist.strings */; };
-		94153BB416F0DF3100AE562D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BB316F0DF3100AE562D /* main.m */; };
-		94153BB816F0DF3100AE562D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BB716F0DF3100AE562D /* AppDelegate.m */; };
-		94153BBA16F0DF3100AE562D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 94153BB916F0DF3100AE562D /* Default.png */; };
-		94153BBC16F0DF3100AE562D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94153BBB16F0DF3100AE562D /* Default@2x.png */; };
-		94153BBE16F0DF3100AE562D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94153BBD16F0DF3100AE562D /* Default-568h@2x.png */; };
 		94153BC116F0DF3100AE562D /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94153BBF16F0DF3100AE562D /* iPhone.storyboard */; };
-		94153BCD16F0DF9D00AE562D /* Core Data SPoT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94153BCB16F0DF9D00AE562D /* Core Data SPoT.xcdatamodeld */; };
 		94153BDD16F0E10200AE562D /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BD216F0E10200AE562D /* FlickrFetcher.m */; };
 		94153BDE16F0E10200AE562D /* FlickrImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BD416F0E10200AE562D /* FlickrImageViewController.m */; };
 		94153BDF16F0E10200AE562D /* FlickrPhotoCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BD616F0E10200AE562D /* FlickrPhotoCache.m */; };
 		94153BE016F0E10200AE562D /* FlickrPhotoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BD816F0E10200AE562D /* FlickrPhotoTVC.m */; };
 		94153BE116F0E10200AE562D /* FlickrRecentImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BDA16F0E10200AE562D /* FlickrRecentImages.m */; };
 		94153BE216F0E10200AE562D /* RZTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BDC16F0E10200AE562D /* RZTools.m */; };
+		94153BE516F0E50500AE562D /* Core Data SPoT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94153BE316F0E50500AE562D /* Core Data SPoT.xcdatamodeld */; };
+		94153BEE16F0E60200AE562D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BE716F0E60200AE562D /* AppDelegate.m */; };
+		94153BF016F0E60200AE562D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94153BEA16F0E60200AE562D /* Default-568h@2x.png */; };
+		94153BF116F0E60200AE562D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 94153BEB16F0E60200AE562D /* Default.png */; };
+		94153BF216F0E60200AE562D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94153BEC16F0E60200AE562D /* Default@2x.png */; };
+		94153BF316F0E60200AE562D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BED16F0E60200AE562D /* main.m */; };
+		94153BF716F0E7DA00AE562D /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94153BF516F0E7DA00AE562D /* iPad.storyboard */; };
+		94153C0616F0E83900AE562D /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C0516F0E83900AE562D /* Photo.m */; };
+		94153C0916F0E83900AE562D /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C0816F0E83900AE562D /* Tag.m */; };
+		94153C1016F0EA9800AE562D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94153C0F16F0EA9800AE562D /* CoreData.framework */; };
+		94153C1316F0EAD200AE562D /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C1216F0EAD200AE562D /* CoreDataTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,17 +36,8 @@
 		94153BA716F0DF3100AE562D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		94153BA916F0DF3100AE562D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94153BAB16F0DF3100AE562D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		94153BAF16F0DF3100AE562D /* Core Data SPoT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Core Data SPoT-Info.plist"; sourceTree = "<group>"; };
 		94153BB116F0DF3100AE562D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		94153BB316F0DF3100AE562D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		94153BB516F0DF3100AE562D /* Core Data SPoT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Core Data SPoT-Prefix.pch"; sourceTree = "<group>"; };
-		94153BB616F0DF3100AE562D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		94153BB716F0DF3100AE562D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		94153BB916F0DF3100AE562D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		94153BBB16F0DF3100AE562D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		94153BBD16F0DF3100AE562D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		94153BC016F0DF3100AE562D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone.storyboard; sourceTree = "<group>"; };
-		94153BCC16F0DF9D00AE562D /* Core Data SPoT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Core Data SPoT.xcdatamodel"; sourceTree = "<group>"; };
 		94153BD016F0E10200AE562D /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
 		94153BD116F0E10200AE562D /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
 		94153BD216F0E10200AE562D /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
@@ -55,6 +51,23 @@
 		94153BDA16F0E10200AE562D /* FlickrRecentImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrRecentImages.m; sourceTree = "<group>"; };
 		94153BDB16F0E10200AE562D /* RZTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZTools.h; sourceTree = "<group>"; };
 		94153BDC16F0E10200AE562D /* RZTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZTools.m; sourceTree = "<group>"; };
+		94153BE416F0E50500AE562D /* Core Data SPoT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Core Data SPoT.xcdatamodel"; sourceTree = "<group>"; };
+		94153BE616F0E60200AE562D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Supporting Files/AppDelegate.h"; sourceTree = "<group>"; };
+		94153BE716F0E60200AE562D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Supporting Files/AppDelegate.m"; sourceTree = "<group>"; };
+		94153BE916F0E60200AE562D /* Core Data SPoT-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Core Data SPoT-Prefix.pch"; path = "Supporting Files/Core Data SPoT-Prefix.pch"; sourceTree = "<group>"; };
+		94153BEA16F0E60200AE562D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Supporting Files/Default-568h@2x.png"; sourceTree = "<group>"; };
+		94153BEB16F0E60200AE562D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Supporting Files/Default.png"; sourceTree = "<group>"; };
+		94153BEC16F0E60200AE562D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Supporting Files/Default@2x.png"; sourceTree = "<group>"; };
+		94153BED16F0E60200AE562D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
+		94153BF416F0E71500AE562D /* Core Data SPoT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Core Data SPoT-Info.plist"; path = "Supporting Files/Core Data SPoT-Info.plist"; sourceTree = "<group>"; };
+		94153BF616F0E7DA00AE562D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPad.storyboard; sourceTree = "<group>"; };
+		94153C0416F0E83900AE562D /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = Model/Photo.h; sourceTree = "<group>"; };
+		94153C0516F0E83900AE562D /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = Model/Photo.m; sourceTree = "<group>"; };
+		94153C0716F0E83900AE562D /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tag.h; path = Model/Tag.h; sourceTree = "<group>"; };
+		94153C0816F0E83900AE562D /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tag.m; path = Model/Tag.m; sourceTree = "<group>"; };
+		94153C0F16F0EA9800AE562D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		94153C1116F0EAD200AE562D /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		94153C1216F0EAD200AE562D /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94153C1016F0EA9800AE562D /* CoreData.framework in Frameworks */,
 				94153BA816F0DF3100AE562D /* UIKit.framework in Frameworks */,
 				94153BAA16F0DF3100AE562D /* Foundation.framework in Frameworks */,
 				94153BAC16F0DF3100AE562D /* CoreGraphics.framework in Frameworks */,
@@ -74,6 +88,7 @@
 		94153B9B16F0DF3000AE562D = {
 			isa = PBXGroup;
 			children = (
+				94153C0F16F0EA9800AE562D /* CoreData.framework */,
 				94153BAD16F0DF3100AE562D /* Core Data SPoT */,
 				94153BA616F0DF3100AE562D /* Frameworks */,
 				94153BA516F0DF3100AE562D /* Products */,
@@ -102,8 +117,11 @@
 			isa = PBXGroup;
 			children = (
 				94153BCE16F0E10200AE562D /* Flickr Helper Code */,
-				94153BCA16F0DF8B00AE562D /* Model */,
+				94153BCA16F0DF8B00AE562D /* Core Date (Model) */,
 				94153BBF16F0DF3100AE562D /* iPhone.storyboard */,
+				94153BF516F0E7DA00AE562D /* iPad.storyboard */,
+				94153C1116F0EAD200AE562D /* CoreDataTableViewController.h */,
+				94153C1216F0EAD200AE562D /* CoreDataTableViewController.m */,
 				94153BAE16F0DF3100AE562D /* Supporting Files */,
 			);
 			path = "Core Data SPoT";
@@ -112,25 +130,29 @@
 		94153BAE16F0DF3100AE562D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				94153BB616F0DF3100AE562D /* AppDelegate.h */,
-				94153BB716F0DF3100AE562D /* AppDelegate.m */,
-				94153BAF16F0DF3100AE562D /* Core Data SPoT-Info.plist */,
+				94153BE616F0E60200AE562D /* AppDelegate.h */,
+				94153BE716F0E60200AE562D /* AppDelegate.m */,
+				94153BF416F0E71500AE562D /* Core Data SPoT-Info.plist */,
+				94153BE916F0E60200AE562D /* Core Data SPoT-Prefix.pch */,
 				94153BB016F0DF3100AE562D /* InfoPlist.strings */,
-				94153BB316F0DF3100AE562D /* main.m */,
-				94153BB516F0DF3100AE562D /* Core Data SPoT-Prefix.pch */,
-				94153BB916F0DF3100AE562D /* Default.png */,
-				94153BBB16F0DF3100AE562D /* Default@2x.png */,
-				94153BBD16F0DF3100AE562D /* Default-568h@2x.png */,
+				94153BEA16F0E60200AE562D /* Default-568h@2x.png */,
+				94153BEB16F0E60200AE562D /* Default.png */,
+				94153BEC16F0E60200AE562D /* Default@2x.png */,
+				94153BED16F0E60200AE562D /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		94153BCA16F0DF8B00AE562D /* Model */ = {
+		94153BCA16F0DF8B00AE562D /* Core Date (Model) */ = {
 			isa = PBXGroup;
 			children = (
-				94153BCB16F0DF9D00AE562D /* Core Data SPoT.xcdatamodeld */,
+				94153C0716F0E83900AE562D /* Tag.h */,
+				94153C0816F0E83900AE562D /* Tag.m */,
+				94153C0416F0E83900AE562D /* Photo.h */,
+				94153C0516F0E83900AE562D /* Photo.m */,
+				94153BE316F0E50500AE562D /* Core Data SPoT.xcdatamodeld */,
 			);
-			name = Model;
+			name = "Core Date (Model)";
 			sourceTree = "<group>";
 		};
 		94153BCE16F0E10200AE562D /* Flickr Helper Code */ = {
@@ -213,10 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				94153BB216F0DF3100AE562D /* InfoPlist.strings in Resources */,
-				94153BBA16F0DF3100AE562D /* Default.png in Resources */,
-				94153BBC16F0DF3100AE562D /* Default@2x.png in Resources */,
-				94153BBE16F0DF3100AE562D /* Default-568h@2x.png in Resources */,
 				94153BC116F0DF3100AE562D /* iPhone.storyboard in Resources */,
+				94153BF016F0E60200AE562D /* Default-568h@2x.png in Resources */,
+				94153BF116F0E60200AE562D /* Default.png in Resources */,
+				94153BF216F0E60200AE562D /* Default@2x.png in Resources */,
+				94153BF716F0E7DA00AE562D /* iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,15 +250,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94153BB416F0DF3100AE562D /* main.m in Sources */,
-				94153BB816F0DF3100AE562D /* AppDelegate.m in Sources */,
-				94153BCD16F0DF9D00AE562D /* Core Data SPoT.xcdatamodeld in Sources */,
 				94153BDD16F0E10200AE562D /* FlickrFetcher.m in Sources */,
 				94153BDE16F0E10200AE562D /* FlickrImageViewController.m in Sources */,
 				94153BDF16F0E10200AE562D /* FlickrPhotoCache.m in Sources */,
 				94153BE016F0E10200AE562D /* FlickrPhotoTVC.m in Sources */,
 				94153BE116F0E10200AE562D /* FlickrRecentImages.m in Sources */,
 				94153BE216F0E10200AE562D /* RZTools.m in Sources */,
+				94153BE516F0E50500AE562D /* Core Data SPoT.xcdatamodeld in Sources */,
+				94153BEE16F0E60200AE562D /* AppDelegate.m in Sources */,
+				94153BF316F0E60200AE562D /* main.m in Sources */,
+				94153C0616F0E83900AE562D /* Photo.m in Sources */,
+				94153C0916F0E83900AE562D /* Tag.m in Sources */,
+				94153C1316F0EAD200AE562D /* CoreDataTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +282,14 @@
 				94153BC016F0DF3100AE562D /* en */,
 			);
 			name = iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		94153BF516F0E7DA00AE562D /* iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94153BF616F0E7DA00AE562D /* en */,
+			);
+			name = iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -321,9 +355,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Core Data SPoT/Core Data SPoT-Prefix.pch";
-				INFOPLIST_FILE = "Core Data SPoT/Core Data SPoT-Info.plist";
+				GCC_PREFIX_HEADER = "Core Data SPoT/Supporting Files/Core Data SPoT-Prefix.pch";
+				INFOPLIST_FILE = "Core Data SPoT/Supporting Files/Core Data SPoT-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -332,9 +368,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Core Data SPoT/Core Data SPoT-Prefix.pch";
-				INFOPLIST_FILE = "Core Data SPoT/Core Data SPoT-Info.plist";
+				GCC_PREFIX_HEADER = "Core Data SPoT/Supporting Files/Core Data SPoT-Prefix.pch";
+				INFOPLIST_FILE = "Core Data SPoT/Supporting Files/Core Data SPoT-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -362,13 +400,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		94153BCB16F0DF9D00AE562D /* Core Data SPoT.xcdatamodeld */ = {
+		94153BE316F0E50500AE562D /* Core Data SPoT.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				94153BCC16F0DF9D00AE562D /* Core Data SPoT.xcdatamodel */,
+				94153BE416F0E50500AE562D /* Core Data SPoT.xcdatamodel */,
 			);
-			currentVersion = 94153BCC16F0DF9D00AE562D /* Core Data SPoT.xcdatamodel */;
-			path = "Core Data SPoT.xcdatamodeld";
+			currentVersion = 94153BE416F0E50500AE562D /* Core Data SPoT.xcdatamodel */;
+			name = "Core Data SPoT.xcdatamodeld";
+			path = "Model/Core Data SPoT.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
