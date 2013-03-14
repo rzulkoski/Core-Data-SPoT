@@ -27,7 +27,6 @@
     if (!matches || ([matches count] > 1)) {
         // handle error
     } else if (![matches count]) {
-        NSLog(@"No thumbnail exists, create a new one");
         thumbnail = [NSEntityDescription insertNewObjectForEntityForName:@"Thumbnail" inManagedObjectContext:context];
         dispatch_queue_t imageFetchQ = dispatch_queue_create("image fetcher", NULL);
         dispatch_async(imageFetchQ, ^{
@@ -40,7 +39,6 @@
             }];
         });
     } else {
-        NSLog(@"Thumbnail already exists, return current one");
         thumbnail = [matches lastObject];
     }
     

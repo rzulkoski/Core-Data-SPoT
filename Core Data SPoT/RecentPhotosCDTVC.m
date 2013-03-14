@@ -31,9 +31,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    NSLog(@"About to check if managedObjectContext in PhotosForTagCDTVC is set yet");
     if (!self.managedObjectContext) {
-        NSLog(@"managedObjectContext is NOT set");
         [self useCoreDataDocument];
     }
 }
@@ -52,24 +50,20 @@
     UIManagedDocument *document = [[UIManagedDocument alloc] initWithFileURL:url];
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:[url path]]) {
-        NSLog(@"Going to create Doc");
         [document saveToURL:url
            forSaveOperation:UIDocumentSaveForCreating
           completionHandler:^(BOOL success) {
               if (success) {
                   self.managedObjectContext = document.managedObjectContext;
-                  //[self refresh];
               }
           }];
     } else if (document.documentState == UIDocumentStateClosed) {
-        NSLog(@"Doc already exists but isn't open");
         [document openWithCompletionHandler:^(BOOL success) {
             if (success) {
                 self.managedObjectContext = document.managedObjectContext;
             }
         }];
     } else {
-        NSLog(@"Doc is assumed to already be open");
         self.managedObjectContext = document.managedObjectContext;
     }
 }

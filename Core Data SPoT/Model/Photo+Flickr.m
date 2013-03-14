@@ -58,11 +58,9 @@
     NSMutableSet *tags = [[NSMutableSet alloc] init];
     
     // Look at each Flickr tag for the photo
-    
     for (NSString *flickrTag in [[photoDictionary[FLICKR_TAGS] description] componentsSeparatedByString:@" "]) {
         // If tag isn't one we are ignoring, add it to our set of tags for this photo
         if ([flickrTag length] && ![IGNORED_TAGS containsObject:flickrTag]) {
-            NSLog(@"Flickr tag = %@", flickrTag);
             Tag *tag = [Tag tagWithName:flickrTag inManagedObjectContext:context];
             [tags addObject:tag];
         }
@@ -71,9 +69,15 @@
     return [tags copy];
 }
 
-- (Thumbnail *)thumbnail
+// Designated method for retrieving thumbnail image rather than using photo.thumbnail since the latter is not guaranteed
+// to be set. This is what allows for the on-demand thumbnails to function.
+- (UIImage *)thumbnailImage
 {
-    return [Thumbnail thumbnailForPhoto:self inManagedObjectContext:self.managedObjectContext];
+    // If thumbnail relationship hasn't been set yet (meaning thumbnail image isn't stored in database yet),
+    // then retrieve the thumbnail image and associate it with this photo (handled in Thumbnail+Create.m)
+    if (!self.thumbnail) [Thumbnail thumbnailForPhoto:self inManagedObjectContext:self.managedObjectContext];
+    
+    return [UIImage imageWithData:self.thumbnail.imageData];
 }
 
 @end

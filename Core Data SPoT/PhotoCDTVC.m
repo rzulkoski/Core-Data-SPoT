@@ -7,7 +7,7 @@
 //
 
 #import "PhotoCDTVC.h"
-#import "Photo.h"
+#import "Photo+Flickr.h"
 #import "Thumbnail+Create.h"
 
 @implementation PhotoCDTVC
@@ -16,7 +16,6 @@
 {
     _managedObjectContext = managedObjectContext;
     if (managedObjectContext) {
-        NSLog(@"About to fetch photos from database");
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Photo"];
         if (self.fetchLimit) request.fetchLimit = [self.fetchLimit intValue];
         request.sortDescriptors = @[self.sortDescriptor];
@@ -39,8 +38,7 @@
     Photo *photo = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = photo.title;
     cell.detailTextLabel.text = photo.subtitle;
-    //if (!photo.thumbnail) photo.thumbnail = [Thumbnail thumbnailWithURL:[NSURL URLWithString:photo.thumbnailURL] inManagedObjectContext:self.managedObjectContext];
-    cell.imageView.image = [UIImage imageWithData:photo.thumbnail.imageData];
+    cell.imageView.image = [photo thumbnailImage];
     
     return cell;
 }
@@ -63,20 +61,14 @@
     
     if (indexPath) {
         if ([segue.identifier isEqualToString:@"setPhoto:"]) {
-            NSLog(@"Found segue identifier correctly");
             if ([segue.destinationViewController respondsToSelector:@selector(setPhoto:)]) {
-                NSLog(@"Destination ViewController does respond to setPhoto:");
                 Photo *photo = [self.fetchedResultsController objectAtIndexPath:indexPath];
-                NSLog(@"lastViewed before setting: %@", photo.lastViewed);
                 photo.lastViewed = [NSDate date];
-                NSLog(@"lastViewed after setting: %@", photo.lastViewed);
                 NSURL *imageURL = [NSURL URLWithString:photo.imageURL];
                 NSDictionary *photoDictionary = @{ @"id" : photo.unique,
                                                    @"originalformat" : photo.originalFormat,
                                                    @"imageURL" : imageURL };
-                NSLog(@"About to perform setPhoto:");
                 [segue.destinationViewController performSelector:@selector(setPhoto:) withObject:photoDictionary];
-                NSLog(@"setPhoto: has been performed");
                 if ([segue.destinationViewController respondsToSelector:@selector(setTitle:)]) {
                     [segue.destinationViewController performSelector:@selector(setTitle:) withObject:photo.title];
                 }

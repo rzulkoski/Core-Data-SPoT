@@ -15,10 +15,9 @@
 {
     _managedObjectContext = managedObjectContext;
     if (managedObjectContext) {
-        NSLog(@"About to fetch tags from database");
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Tag"];
         request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)]];
-        request.predicate = nil; // all Photos
+        request.predicate = nil; // all Tags
         self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     } else {
         self.fetchedResultsController = nil;

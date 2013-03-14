@@ -13,4 +13,8 @@
 + (Photo *)photoWithFlickrInfo:(NSDictionary *)photoDictionary
         inManagedObjectContext:(NSManagedObjectContext *)context;
 
+// Designated method for retrieving thumbnail image rather than using photo.thumbnail since the latter is not guaranteed
+// to be set. This is what allows for the on-demand thumbnails to function.
+- (UIImage *)thumbnailImage;
+
 @end
