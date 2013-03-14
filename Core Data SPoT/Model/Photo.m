@@ -8,6 +8,7 @@
 
 #import "Photo.h"
 #import "Tag.h"
+#import "Thumbnail.h"
 
 
 @implementation Photo
@@ -16,9 +17,10 @@
 @dynamic lastViewed;
 @dynamic originalFormat;
 @dynamic subtitle;
-@dynamic thumbnail;
 @dynamic title;
 @dynamic unique;
+@dynamic thumbnailURL;
 @dynamic tags;
+@dynamic thumbnail;
 
 @end

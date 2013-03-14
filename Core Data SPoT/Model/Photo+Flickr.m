@@ -8,6 +8,7 @@
 
 #import "Photo+Flickr.h"
 #import "Tag+Create.h"
+#import "Thumbnail+Create.h"
 #import "FlickrFetcher.h"
 
 #define IGNORED_TAGS @[@"cs193pspot",@"portrait",@"landscape"]
@@ -41,6 +42,7 @@
         photo.title = [photoDictionary[FLICKR_PHOTO_TITLE] description];
         photo.subtitle = [[photoDictionary valueForKeyPath:FLICKR_PHOTO_DESCRIPTION] description];
         photo.imageURL = [[FlickrFetcher urlForPhoto:photoDictionary format:FlickrPhotoFormatLarge] absoluteString];
+        photo.thumbnailURL = [[FlickrFetcher urlForPhoto:photoDictionary format:FlickrPhotoFormatSquare] absoluteString];
         photo.originalFormat = [photoDictionary[FLICKR_PHOTO_ORIGINAL_FORMAT] description];
         photo.tags = [self parseTagsForPhotoWithFlickrInfo:photoDictionary inManagedObjectContext:context];
     } else { // found the Photo, just return it from the list of matches (which there will only be one of)
@@ -67,6 +69,11 @@
     }
     
     return [tags copy];
+}
+
+- (Thumbnail *)thumbnail
+{
+    return [Thumbnail thumbnailForPhoto:self inManagedObjectContext:self.managedObjectContext];
 }
 
 @end

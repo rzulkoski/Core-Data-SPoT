@@ -8,6 +8,7 @@
 
 #import "PhotoCDTVC.h"
 #import "Photo.h"
+#import "Thumbnail+Create.h"
 
 @implementation PhotoCDTVC
 
@@ -18,7 +19,7 @@
         NSLog(@"About to fetch photos from database");
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Photo"];
         if (self.fetchLimit) request.fetchLimit = [self.fetchLimit intValue];
-        request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES selector:@selector(localizedCaseInsensitiveCompare:)]];
+        request.sortDescriptors = @[self.sortDescriptor];
         request.predicate = self.predicate;
         self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     } else {
@@ -38,6 +39,8 @@
     Photo *photo = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = photo.title;
     cell.detailTextLabel.text = photo.subtitle;
+    //if (!photo.thumbnail) photo.thumbnail = [Thumbnail thumbnailWithURL:[NSURL URLWithString:photo.thumbnailURL] inManagedObjectContext:self.managedObjectContext];
+    cell.imageView.image = [UIImage imageWithData:photo.thumbnail.imageData];
     
     return cell;
 }
@@ -64,6 +67,9 @@
             if ([segue.destinationViewController respondsToSelector:@selector(setPhoto:)]) {
                 NSLog(@"Destination ViewController does respond to setPhoto:");
                 Photo *photo = [self.fetchedResultsController objectAtIndexPath:indexPath];
+                NSLog(@"lastViewed before setting: %@", photo.lastViewed);
+                photo.lastViewed = [NSDate date];
+                NSLog(@"lastViewed after setting: %@", photo.lastViewed);
                 NSURL *imageURL = [NSURL URLWithString:photo.imageURL];
                 NSDictionary *photoDictionary = @{ @"id" : photo.unique,
                                                    @"originalformat" : photo.originalFormat,

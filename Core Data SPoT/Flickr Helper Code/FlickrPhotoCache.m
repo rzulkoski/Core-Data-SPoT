@@ -12,7 +12,7 @@
 
 #define PHOTO_CACHE_DIR @"Photos"
 #define NUM_BYTES_PER_MB pow(2.0,20)
-#define MAX_CACHE_SIZE_IN_MB 3.0
+#define MAX_CACHE_SIZE_IN_MB 5.0
 #define IMAGE_URL_KEY @"imageURL"
 
 @implementation FlickrPhotoCache

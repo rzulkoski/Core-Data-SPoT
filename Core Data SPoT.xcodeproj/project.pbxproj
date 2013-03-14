@@ -24,8 +24,6 @@
 		94153BF216F0E60200AE562D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 94153BEC16F0E60200AE562D /* Default@2x.png */; };
 		94153BF316F0E60200AE562D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153BED16F0E60200AE562D /* main.m */; };
 		94153BF716F0E7DA00AE562D /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94153BF516F0E7DA00AE562D /* iPad.storyboard */; };
-		94153C0616F0E83900AE562D /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C0516F0E83900AE562D /* Photo.m */; };
-		94153C0916F0E83900AE562D /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C0816F0E83900AE562D /* Tag.m */; };
 		94153C1016F0EA9800AE562D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94153C0F16F0EA9800AE562D /* CoreData.framework */; };
 		94153C1316F0EAD200AE562D /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C1216F0EAD200AE562D /* CoreDataTableViewController.m */; };
 		94153C1616F0EC0700AE562D /* Photo+Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C1516F0EC0700AE562D /* Photo+Flickr.m */; };
@@ -36,6 +34,10 @@
 		94153C2516F1048F00AE562D /* FeaturedTagsCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C2416F1048F00AE562D /* FeaturedTagsCDTVC.m */; };
 		94153C2816F1095300AE562D /* RecentPhotosCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C2716F1095200AE562D /* RecentPhotosCDTVC.m */; };
 		94153C2B16F1130A00AE562D /* FlickrImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94153C2A16F1130A00AE562D /* FlickrImageViewController.m */; };
+		9481AEC416F17926004F0345 /* Thumbnail+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 9481AEC316F17926004F0345 /* Thumbnail+Create.m */; };
+		9481AED916F1869B004F0345 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 9481AED816F1869B004F0345 /* Tag.m */; };
+		9481AEDC16F1869B004F0345 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9481AEDB16F1869B004F0345 /* Photo.m */; };
+		9481AEDF16F1869B004F0345 /* Thumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9481AEDE16F1869B004F0345 /* Thumbnail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,10 +68,6 @@
 		94153BED16F0E60200AE562D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		94153BF416F0E71500AE562D /* Core Data SPoT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Core Data SPoT-Info.plist"; path = "Supporting Files/Core Data SPoT-Info.plist"; sourceTree = "<group>"; };
 		94153BF616F0E7DA00AE562D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPad.storyboard; sourceTree = "<group>"; };
-		94153C0416F0E83900AE562D /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = Model/Photo.h; sourceTree = "<group>"; };
-		94153C0516F0E83900AE562D /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = Model/Photo.m; sourceTree = "<group>"; };
-		94153C0716F0E83900AE562D /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tag.h; path = Model/Tag.h; sourceTree = "<group>"; };
-		94153C0816F0E83900AE562D /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tag.m; path = Model/Tag.m; sourceTree = "<group>"; };
 		94153C0F16F0EA9800AE562D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		94153C1116F0EAD200AE562D /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
 		94153C1216F0EAD200AE562D /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
@@ -89,6 +87,14 @@
 		94153C2716F1095200AE562D /* RecentPhotosCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotosCDTVC.m; sourceTree = "<group>"; };
 		94153C2916F1130A00AE562D /* FlickrImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrImageViewController.h; sourceTree = "<group>"; };
 		94153C2A16F1130A00AE562D /* FlickrImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrImageViewController.m; sourceTree = "<group>"; };
+		9481AEC216F17926004F0345 /* Thumbnail+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Thumbnail+Create.h"; path = "Model/Thumbnail+Create.h"; sourceTree = "<group>"; };
+		9481AEC316F17926004F0345 /* Thumbnail+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Thumbnail+Create.m"; path = "Model/Thumbnail+Create.m"; sourceTree = "<group>"; };
+		9481AED716F1869B004F0345 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tag.h; path = Model/Tag.h; sourceTree = "<group>"; };
+		9481AED816F1869B004F0345 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tag.m; path = Model/Tag.m; sourceTree = "<group>"; };
+		9481AEDA16F1869B004F0345 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = Model/Photo.h; sourceTree = "<group>"; };
+		9481AEDB16F1869B004F0345 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = Model/Photo.m; sourceTree = "<group>"; };
+		9481AEDD16F1869B004F0345 /* Thumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Thumbnail.h; path = Model/Thumbnail.h; sourceTree = "<group>"; };
+		9481AEDE16F1869B004F0345 /* Thumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Thumbnail.m; path = Model/Thumbnail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,15 +183,19 @@
 		94153BCA16F0DF8B00AE562D /* Core Date (Model) */ = {
 			isa = PBXGroup;
 			children = (
-				94153C0716F0E83900AE562D /* Tag.h */,
-				94153C0816F0E83900AE562D /* Tag.m */,
-				94153C1716F0F07B00AE562D /* Tag+Create.h */,
-				94153C1816F0F07B00AE562D /* Tag+Create.m */,
-				94153C0416F0E83900AE562D /* Photo.h */,
-				94153C0516F0E83900AE562D /* Photo.m */,
 				94153C1416F0EC0700AE562D /* Photo+Flickr.h */,
 				94153C1516F0EC0700AE562D /* Photo+Flickr.m */,
+				94153C1716F0F07B00AE562D /* Tag+Create.h */,
+				94153C1816F0F07B00AE562D /* Tag+Create.m */,
+				9481AEC216F17926004F0345 /* Thumbnail+Create.h */,
+				9481AEC316F17926004F0345 /* Thumbnail+Create.m */,
 				94153BE316F0E50500AE562D /* Core Data SPoT.xcdatamodeld */,
+				9481AEDD16F1869B004F0345 /* Thumbnail.h */,
+				9481AEDE16F1869B004F0345 /* Thumbnail.m */,
+				9481AEDA16F1869B004F0345 /* Photo.h */,
+				9481AEDB16F1869B004F0345 /* Photo.m */,
+				9481AED716F1869B004F0345 /* Tag.h */,
+				9481AED816F1869B004F0345 /* Tag.m */,
 			);
 			name = "Core Date (Model)";
 			sourceTree = "<group>";
@@ -293,8 +303,6 @@
 				94153BE516F0E50500AE562D /* Core Data SPoT.xcdatamodeld in Sources */,
 				94153BEE16F0E60200AE562D /* AppDelegate.m in Sources */,
 				94153BF316F0E60200AE562D /* main.m in Sources */,
-				94153C0616F0E83900AE562D /* Photo.m in Sources */,
-				94153C0916F0E83900AE562D /* Tag.m in Sources */,
 				94153C1316F0EAD200AE562D /* CoreDataTableViewController.m in Sources */,
 				94153C1616F0EC0700AE562D /* Photo+Flickr.m in Sources */,
 				94153C1916F0F07B00AE562D /* Tag+Create.m in Sources */,
@@ -304,6 +312,10 @@
 				94153C2516F1048F00AE562D /* FeaturedTagsCDTVC.m in Sources */,
 				94153C2816F1095300AE562D /* RecentPhotosCDTVC.m in Sources */,
 				94153C2B16F1130A00AE562D /* FlickrImageViewController.m in Sources */,
+				9481AEC416F17926004F0345 /* Thumbnail+Create.m in Sources */,
+				9481AED916F1869B004F0345 /* Tag.m in Sources */,
+				9481AEDC16F1869B004F0345 /* Photo.m in Sources */,
+				9481AEDF16F1869B004F0345 /* Thumbnail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +450,7 @@
 				94153BC916F0DF3100AE562D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
