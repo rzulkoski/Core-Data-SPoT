@@ -23,6 +23,7 @@
     self.sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"lastViewed"
                                                         ascending:NO
                                                          selector:@selector(compare:)];
+    self.predicate = [NSPredicate predicateWithFormat:@"lastViewed != %@", nil];
     self.fetchLimit = @(MAX_RECENT_PHOTOS);
 }
 
@@ -31,9 +32,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    if (!self.managedObjectContext) {
-        [self useCoreDataDocument];
-    }
+    [self useCoreDataDocument];
 }
 
 // Either creates, opens or just uses the core data document
@@ -67,6 +66,5 @@
         self.managedObjectContext = document.managedObjectContext;
     }
 }
-
 
 @end
